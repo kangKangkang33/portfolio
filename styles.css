@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.rocky
+{
+    height: 100vh;
+    width: 100%;
+    background-image: url(img/tiger.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.content{
+    height: 18vh;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content h2{
+    font-size: 35px;
+    letter-spacing: 1px;
+    color: #ff006a;
+}
+
+.content ul li {
+    display: inline-block;
+    list-style-type: none;
+    padding: 0px 20px;
+}
+
+.content ul li a{
+    text-decoration: none;
+    color: #ff006a;
+    transition: .3s;
+}
+
+.content ul li a:hover
+{
+    color: #fff;
+    font-weight: bold;
+}
+
+.main{
+    position: absolute;
+    left: 20%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1{
+    font-size: 65px;
+    margin: 15px 0px 15px;
+    color: #fff;
+    font-weight: bold;
+}
+
+span{
+    color: #ff006a;
+}
+
+h3{
+    color: #777;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+h4{
+    color: #777;
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+p{
+    font-size: 10px;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+button{
+    background-color: #ff006a;
+    padding: 13px 30px;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    transition: .4s;
+}
+
+button:hover
+{
+    background-color: transparent;
+    border: 2px solid #ff006a;
+    color: #fff;
+    cursor: pointer;
+}
+
+.sidebar
+{
+    position: absolute;
+    height: 240px;
+    width: 80px;
+    background-color: #fff;
+    border-radius: 10px;
+    top: 30%;
+    right: 30px;
+    transform: translate(-50%);
+    text-align: center;
+}
+
+.box
+{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px auto;
+}
+
+.text{
+    background-color: #ff006a;
+    height: 100%;
+    min-height: 0px;
+    margin-right: 5px;
+    line-height: 0;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px 0 0 5px;
+    overflow: hidden;
+}
+
+.icon{
+    height: 100%;
+    min-width: 100%;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.icon i{
+    color: #ff006a;
+    font-size: 18px;
+    line-height: 50px;
+}
+
+.box:hover .icon {
+    background-color: #ff006a;
+}
+
+.box:hover .icon i{
+    color: #fff;
+}
+
+.box:hover .text{
+    min-width: 120px;
+}
